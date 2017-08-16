@@ -5,8 +5,10 @@ from openpyxl import load_workbook
 
 # Загрузить таблицу Excel из файла в переменную wb
 wb = load_workbook('data_analysis_lab.xlsx')
+
 # Загрузить лист с именем "Data" в переменную sheet
 sheet = wb['Data']
+
 # Получить содержимое колонок в виде списка
 x = sheet['A'][1:]
 y = sheet['B'][1:]
