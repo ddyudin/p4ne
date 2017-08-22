@@ -13,4 +13,5 @@ for adr in str_list:
     if adr.find('ip address ') > 0:
         list_of_address.append(adr.replace('ip address ', '').strip())
 
+
 print(sorted(list(set(list(list_of_address)))))
