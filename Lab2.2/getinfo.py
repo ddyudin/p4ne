@@ -36,7 +36,7 @@ def host_info():
         r.append(hosts[h]['name'])
     return jsonify(r)
 
-@app.route('/configs/<hostname>')
+@app.route('/config/<hostname>')
 def ip_info(hostname):
     for h in hosts.keys():
         if hosts[h]['name'] == hostname:
