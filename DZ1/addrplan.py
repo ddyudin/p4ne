@@ -30,7 +30,7 @@ current_row = 2
 for network in ln2:
     for address in list_of_address:
         if ipaddress.IPv4Interface(address[0] + '/' + address[1]) in network:
-            #print('%s\t\t\t%s\t\t%s' % str(network),str(address[1]), str(address[0]))
+            print('%s\t\t\t%s\t\t%s' % (str(network), address[1], address[0]))
             ws.cell(row=current_row, column=1, value=str(network))
             ws.cell(row=current_row, column=2, value=address[1])
             ws.cell(row=current_row, column=3, value=address[0])
