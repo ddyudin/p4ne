@@ -3,8 +3,6 @@ import re
 import ipaddress
 from openpyxl import * #найти функции создания книги, листа, записи на лист
 
-#function to find ip
-
 list_of_address = set()
 for file_name in glob.glob(('f:\\Seafile\\p4ne_training\\config_files\\*.txt')):
     with open(file_name) as f:
